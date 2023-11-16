@@ -1,0 +1,234 @@
+/* Header CSS Styles */
+.main-header{
+    width: 100% !important;
+    z-index: 9;
+    height: 8vh !important;
+    position: fixed !important;
+    top: 0 !important;
+    overflow: hidden !important;
+    background-color: white;
+    overflow-x: hidden !important;
+}
+
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3em;
+    height: 7.8vh;
+    font-size: 0.75em;
+}
+.header-content h1{
+    font-size: 1.378vw;
+    color: black;
+}
+.header-text-two{
+    text-transform: uppercase;
+}
+.header-content h1:hover{
+    color: #E1481B;
+    cursor: pointer;
+}
+.header-percent{
+    margin-left: 0.5em;
+    font-weight: 500;
+    color: #E1481B;
+    font-style: italic;
+}
+.header-line{
+    border-top: 2px solid #E1481B;
+}
+.MenuButton{
+    font-size: 1.378vw;
+    cursor: pointer;
+    color: black;
+}
+.MenuButton:hover{
+    transition: 0.2s;
+    color: #E1481B;
+}
+/* Modal */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(4px);
+    z-index: 999;
+  }
+  
+  .modal {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 26%;
+    height: 87%;
+    background-color: #161616;
+    padding: 2em;
+    margin: 2em;
+    border-radius: 10px;
+    overflow-y: auto; /* Add this to enable scrolling within the modal */
+    z-index: 999;
+  }
+  
+  .modal-close {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #161616;
+    font-size: 1vw;
+    color: white;
+    border: none;
+    position: relative;
+    cursor: pointer;
+  }
+  
+.modal p{
+    color: white;
+    font-size: 0.8vw;
+}
+.modal h2{
+    color: white;
+    font-size: 1.3vw;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: 400;
+    margin-top: 0.5em;
+}
+.linksMenu{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3em;
+    padding-bottom: 55%;
+}
+.linksMenu p{
+    cursor: pointer;
+    font-size: 0.9vw;
+    line-height: 200%;
+}
+.linksMenu p:hover{
+    width: 100%;
+    color: rgb(255, 128, 0);
+    border-bottom: 1px solid rgb(255, 128, 0);
+    transition: 0.2s;
+}
+.linksMenu2{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+    text-transform: uppercase;
+}
+.linksMenu a{
+    line-height: 200%;
+    color: white;
+    text-decoration: none;
+    font-size: 0.9vw;
+}
+.linksMenu2 a{
+    line-height: 200%;
+    color: white;
+    text-decoration: none;
+    font-size: 0.9vw;
+}
+.linksMenu a:hover{
+    width: 100%;
+    color: rgb(255, 128, 0);
+    border-bottom: 1px solid rgb(255, 128, 0);
+    transition: 0.2s;
+}
+.linksMenu2 a:hover{
+    width: 100%;
+    color: rgb(255, 128, 0);
+    border-bottom: 1px solid rgb(255, 128, 0);
+    transition: 0.2s;
+}
+
+.headerTitleModal{
+    margin-top: 3em;
+    font-weight: 600;
+}
+.pointer{
+    cursor: pointer;
+}
+.swiperHeader-padd{
+    padding: 0 1em;
+}
+
+@media screen and (max-width: 1441px) {
+    .modal {
+        height: 85%;
+      }
+    .linksMenu{
+        display: flex;
+        flex-direction: column;
+        margin-top: 5em;
+        padding-bottom: 35vh;
+    }
+  }
+
+
+/* Mobile */
+@media screen and (max-width: 540px) {
+    .MenuButton{
+        font-size: 6vw;
+    }
+    .header-content{
+        padding: 0 0.5em;
+        height: 7.8vh;
+        font-size: 0.75em;
+        width: 90%;
+    }
+    .header-content h1{
+        font-size: 6vw ;
+    }
+    .header-content{
+        font-size: 4vw;
+    }
+    .modal {
+        width: 100%;
+        height: 100%;
+        background-color: #161616;
+        margin: 0em;
+        border-radius: 0px;
+        z-index: 999;
+      }
+      
+      .modal-close {
+        display: flex;
+        justify-content: flex-start;
+        background-color: #161616;
+        font-size: 12vw;
+        line-height: 0;
+        color: white;
+        border: none;
+        position: relative;
+        cursor: pointer;
+        margin-left: 80%;
+      }
+      
+    .modal p{
+        font-size: 6vw;
+    }
+    .modal h2{
+        font-size: 8vw;
+    }
+    .linksMenu{
+        display: flex;
+        flex-direction: column;
+        margin-top: 3em;
+        padding-bottom: 35%;
+    }
+    .linksMenu p{
+        font-size: 4vw;
+    }
+    .linksMenu a{
+        font-size: 4vw;
+        width: 90%;
+    }
+    .linksMenu2 a{
+        font-size: 4vw;
+        width: 90%;
+    }
+}

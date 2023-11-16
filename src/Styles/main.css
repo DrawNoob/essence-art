@@ -1,0 +1,135 @@
+* {
+    color: black;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Avenir', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+@font-face {
+    font-family: 'Avenir';
+    src: url('./../../public/Fonts/AvenirLTStd-Black.otf') format('otf'),
+}
+.container{
+    position: relative;
+}
+body{
+    font-family: 'Avenir';
+    background-image: url(./../../public/Assets/bg-image.png);
+    background-size: cover;
+    background-position: center;
+}
+html::-webkit-scrollbar {
+    background: rgba(83, 49, 49, 0) !important;
+    width: 0em;
+}
+/* Orange Modal Styles */
+.modal2{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 2.5em;
+    right: 0;
+    height: 88vh;
+    background-color: #E1481B;
+    padding: 1.5em;
+    border-radius: 10px;
+    margin: 0em 3em 0 0;
+    width: 26%;
+    overflow-y: auto;
+    z-index: 999;
+}
+.modal2 p{
+    color: white;
+    font-size: 0.9vw;
+}
+.modal2 h2{
+    color: white;
+    font-size: 1.3vw;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: 400;
+    margin-top: 0.5em;
+}
+.modal-close2{
+    display: flex;
+    justify-content: flex-end;
+    background-color: #E1481B;
+    color: white;
+    border: none;
+    position: relative;
+    cursor: pointer;
+}
+.aboutMainModal{
+    margin-top: 5em;
+}
+.modalMainText{
+    margin-top: 1em;
+    font-size: 0.9vw !important;
+    line-height: 150%;
+    font-weight: 300;
+}
+
+
+.header-percent2{
+    display: none;
+}
+
+.mainSliderStyle{
+    height: 100vh;
+    overflow: hidden;
+}
+.under-slider-name{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.6em;
+}
+.under-slider-name p{
+    font-weight: 600;
+}
+.under-slider-name h4{
+    color: #E1481B;
+    font-style: italic;
+}
+
+@media screen and (max-width: 1441px) {
+    .modal2 {
+        height: 87vh;
+      }
+}
+
+@media screen and (max-width: 540px) {
+    .modal2{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        background-color: #E1481B;
+        padding: 3em;
+        border-radius: 0px;
+        margin: 0;
+        width: 80%;
+        overflow-y: auto;
+        z-index: 999;
+    }
+    .modal2 p{
+        font-size: 5vw;
+    }
+    .modal2 h2{
+        font-size: 7vw;
+    }
+    .modalMainText{
+        font-size: 4vw !important;
+    }
+    .modal-close2{
+        display: flex;
+        justify-content: flex-end;
+        cursor: pointer;
+        font-size: 15vw;
+        line-height: 0;
+    }
+}

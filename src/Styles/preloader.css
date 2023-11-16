@@ -1,0 +1,53 @@
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./../../public/Assets/1-vid.gif);
+    background-size: cover;
+    z-index: 999;
+    transition: opacity 1s;
+    opacity: 1;
+  }
+  .preloader.fade-out {
+    opacity: 0; 
+  }
+  .loading-animation {
+    font-size: 2.2vw;
+    color: #fff;
+    transition: opacity 0.5s; /* Add the transition property for smooth opacity change */
+  }
+  .loading-animation.fade-out {
+    opacity: 0; /* Final opacity when fading out */
+  }
+  .click-animation {
+    font-size: 2.2vw;
+    color: #fff;
+    cursor: pointer;
+    transition: opacity 0.5s;
+    z-index: 2;
+  }
+.preloader span{
+    position: absolute;
+    left: 50%;
+    z-index: 1;
+}
+
+
+@media screen and (max-width: 540px) {
+  .loading-animation {
+    font-size: 9vw;
+  }
+  .click-animation {
+    font-size: 9vw;
+  }
+  .preloader span{
+      position: absolute;
+      left: 50%;
+      z-index: 1;
+  }
+}
